@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply  text-neutral-300 h-screen font-source-code-pro
+    /* @apply bg-neutral-950/50 border-4 text-neutral-300 h-screen overflow-hidden font-jetbrains-mono */
+  }
+
+  #app {
+    @apply size-full rounded-md overflow-hidden
+
+    /* background-image: url(https://r4.wallpaperflare.com/wallpaper/665/68/940/anime-room-interior-dark-wallpaper-88167d78e010ec7860fce1aef882643a.jpg); */
+    /* @apply h-full bg-cover bg-no-repeat */
+  }
+}
