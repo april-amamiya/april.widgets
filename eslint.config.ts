@@ -1,6 +1,6 @@
 import { env } from 'node:process'
 import antfu from '@antfu/eslint-config'
-import tailwind from 'eslint-plugin-tailwindcss'
+import { configs } from 'eslint-plugin-tailwindcss'
 
 export default antfu({
   rules: {
@@ -12,4 +12,4 @@ export default antfu({
 
     'no-console': env.NODE_ENV === 'production' ? 'error' : 'off',
   },
-}, ...tailwind.configs['flat/recommended'])
+}, ...configs['flat/recommended'])

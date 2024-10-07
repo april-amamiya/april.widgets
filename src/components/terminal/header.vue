@@ -6,7 +6,7 @@ import TerminalIcon from '~icons/carbon/terminal'
 </script>
 
 <template>
-  <header class="grid grid-cols-3 items-center bg-neutral-950/95 p-4 leading-none">
+  <header class="grid grid-cols-3 items-center bg-neutral-950/95 p-4 font-black leading-none">
     <div class="text-start text-neutral-500">
       <TerminalIcon />
     </div>

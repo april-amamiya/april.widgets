@@ -91,23 +91,35 @@
     ["tv\\(([^)]*)\\)", "(?:'|\"|`)([^']*)(?:'|\"|`)"]
   ],
 
-  "typescript.tsdk": "node_modules\\typescript\\lib",
+  "typescript.tsdk": "node_modules/typescript/lib",
   "npm.packageManager": "bun",
 
   "cSpell.words": [
+    "amamiya",
+    "antfu",
+    "bradlc",
     "cdylib",
+    "codespaces",
     "datatypes",
+    "dbaeumer",
+    "Destructurable",
     "fira",
     "icns",
     "iconify",
+    "jetbrains",
+    "nocheck",
+    "pausable",
     "rlib",
     "roboto",
     "sawich",
     "serde",
     "soulworker",
     "staticlib",
+    "tailwindcss",
     "tauri",
+    "Triggerable",
     "unplugin",
-    "vueuse"
+    "vueuse",
+    "jetbrains"
   ]
 }

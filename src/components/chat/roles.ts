@@ -1,3 +1,3 @@
 export function roles() {
-  return ['bro', 'mod', 'vip', 'art', 'v'] as const
+  return ['bro', 'mod', 'vip', 'art', 'view'] as const
 }
