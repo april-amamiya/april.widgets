@@ -10,7 +10,6 @@ import { defineConfig } from 'vite'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-
   plugins: [
     autoRouter({
       dts: './.types/auto-routes.d.ts',
@@ -45,5 +44,7 @@ export default defineConfig({
 
   server: {
     host: true,
+    port: 5177,
+    strictPort: true,
   },
 })

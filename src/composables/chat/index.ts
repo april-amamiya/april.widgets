@@ -1,4 +1,4 @@
-import type { roles } from '@/components/window/chat/roles'
+import type { roleList } from '@/components/window/chat/roles'
 
 import { fakerRU as faker } from '@faker-js/faker'
 import { useIRC } from '../irc'
@@ -46,14 +46,14 @@ export const useChat = createGlobalState(() => {
       }
 
       const badges = meta.badges.split(',')
-      function getRole(badges: string[]): ReturnType<typeof roles>[number] {
+      function getRole(badges: string[]): ReturnType<typeof roleList>[number] {
         const sets = [
           ['broadcaster', 'bro'],
           ['moderator', 'mod'],
           ['subscriber', 'sub'],
           ['artist', 'art'],
           ['vip', 'vip'],
-        ] as [string, ReturnType<typeof roles>[number]][]
+        ] as [string, ReturnType<typeof roleList>[number]][]
 
         for (const [name, role] of sets) {
           for (const badge of badges) {

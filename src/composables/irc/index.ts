@@ -1,3 +1,4 @@
+import { useRouterChannel } from '../router'
 import { CapReq } from './cap-req'
 import { IRCCommand } from './command'
 
@@ -32,11 +33,13 @@ export function useIRC(onMessage: (value: IRC3Message) => unknown) {
     socket.send(`PONG :${message}\n\r`)
   }
 
+  const channel = useRouterChannel()
+
   socket.onopen = () => {
     caps().use(CapReq.MEMBERSHIP, CapReq.TAGS, CapReq.COMMANDS)
     pass('oauth:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx')
     nick(`justinfan${String(Math.floor(Math.random() * 1000))}`)
-    join('#sawich')
+    join(`#${channel.value}`)
 
     socket.onmessage = ({ data }) => {
       for (const message of data.trim().split('\r\n')) {

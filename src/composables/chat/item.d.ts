@@ -1,4 +1,4 @@
-import type { roles } from '@/components/window/chat/roles'
+import type { roleList } from '@/components/window/chat/roles'
 
 export {}
 
@@ -8,7 +8,7 @@ declare global {
     time: Date,
     color: string
     name: string
-    role: ReturnType<typeof roles>[number]
+    role: ReturnType<typeof roleList>[number]
     text: string
   }
 }

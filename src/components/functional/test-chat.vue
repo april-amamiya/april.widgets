@@ -1,10 +1,10 @@
 <script setup lang="ts">
-import type { roles } from '../window/chat/roles'
+import type { roleList } from '../window/chat/roles'
 
 import { fakerRU as faker } from '@faker-js/faker'
 
 function users() {
-  function user(role: ReturnType<typeof roles>[number]) {
+  function user(role: ReturnType<typeof roleList>[number]) {
     return {
       role,
       name: faker.internet.userName(),
